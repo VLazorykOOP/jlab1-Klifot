@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,8 +10,8 @@ public class Main {
         System.out.print("Введіть значення b: ");
         double b = scanner.nextDouble();
 
-        double result = a / (Math.pow(b, 2) - 2) + b / (Math.pow(a, 2) + 2) + Math.pow(a * b, 3);
-        System.out.println("Результат (дійсний тип): " + result);
+        int result = (int) (a / (Math.pow(b, 2) - 2) + b / (Math.pow(a, 2) + 2) + Math.pow(a * b, 3));
+        System.out.println("Результат (ціле число): " + result);
 
         scanner.close();
     }
